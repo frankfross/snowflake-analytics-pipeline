@@ -1,0 +1,10 @@
+# Snowflake connection settings.
+# Never commit a real password here — export SNOWFLAKE_PASSWORD instead.
+account: "<account_identifier>"   # e.g. abc12345.us-east-1
+user: "<username>"
+password: "<set SNOWFLAKE_PASSWORD env var>"
+
+warehouse: PORTFOLIO_WH
+database: PORTFOLIO_DB
+schema: ANALYTICS
+role: ACCOUNTADMIN   # or a dedicated role with CREATE WAREHOUSE/DATABASE
